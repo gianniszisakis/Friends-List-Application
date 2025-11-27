@@ -85,3 +85,5 @@ router.delete("/:email", (req, res) => {
 
   res.send(`Friend with email ${email} has been deleted`);
 });
+
+module.exports = router;
