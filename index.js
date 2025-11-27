@@ -89,9 +89,9 @@ app.post("/login", (req, res) => {
       accessToken,
       username,
     };
-    return res.send(200).send("User logged in");
+    return res.status(200).send("User logged in");
   } else {
-    return res.send(208).send("Wrong username or password");
+    return res.status(208).send("Wrong username or password");
   }
 });
 
